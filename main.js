@@ -1,0 +1,11 @@
+'use strict';
+const humb = document.querySelector('#burger');
+const humbBody = document.querySelector('#burger-menu');
+
+
+humb.addEventListener('click', humbHandler);
+function humbHandler(e) {
+   e.preventDefault();
+   humbBody.classList.toggle("open");
+   humb.classList.toggle('active');
+}
